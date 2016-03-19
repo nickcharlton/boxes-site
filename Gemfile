@@ -1,11 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 ruby "2.3.0"
 
-gem 'sinatra', '~> 1.4'
+gem "sinatra", "~> 1.4"
 
 group :development, :test do
-  gem 'rack-test', '~> 0.6'
-  gem 'rspec', '~> 3.3'
-  gem 'pry'
+  gem "rack-test", "~> 0.6"
+  gem "rspec", "~> 3.3"
+  gem "pry"
 end

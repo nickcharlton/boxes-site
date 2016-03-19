@@ -1,5 +1,5 @@
-require 'sinatra'
+require "sinatra"
 
-get '/' do
+get "/" do
   erb :home
 end
