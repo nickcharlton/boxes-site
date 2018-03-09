@@ -5,7 +5,7 @@ ruby "2.4.3"
 gem "sinatra"
 
 group :development, :test do
-  gem "rack-test", "~> 0.6"
+  gem "rack-test"
   gem "rspec", "~> 3.3"
   gem "pry"
 end
