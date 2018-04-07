@@ -33,4 +33,14 @@ describe "API" do
     expect(last_response).to be_bad_request
     expect(json_response).to include("message" => "Parameter is required")
   end
+
+  it "returns the closest compatible version" do
+    VCR.use_cassette("mixlib_install_compatible_version") do
+      get "/api/v1/metadata/chef?platform=debian&platform_version=9"
+
+      expect(last_response).to be_ok
+      expect(json_response).to include("platform" => "debian")
+      expect(json_response).to include("platform_version" => "8")
+    end
+  end
 end

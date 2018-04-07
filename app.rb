@@ -23,6 +23,7 @@ get "/api/v1/metadata/chef" do
     architecture: params[:architecture],
     platform: params[:platform],
     platform_version: params[:platform_version],
+    platform_version_compatibility_mode: true,
   }
 
   mixlib = Mixlib::Install.new(opts)
