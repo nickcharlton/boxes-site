@@ -6,6 +6,7 @@ gem "mixlib-install"
 gem "sinatra"
 gem "sinatra-contrib"
 gem "sinatra-param"
+gem "rack-ssl"
 
 group :development, :test do
   gem "pry"

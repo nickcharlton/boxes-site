@@ -2,6 +2,11 @@ require "sinatra"
 require "sinatra/json"
 require "sinatra/param"
 require "mixlib/install"
+require 'rack/ssl'
+
+configure :production do
+  use Rack::SSL
+end
 
 helpers Sinatra::Param
 
