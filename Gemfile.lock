@@ -27,7 +27,7 @@ GEM
     mixlib-versioning (1.2.2)
     multi_json (1.13.1)
     mustermann (1.0.3)
-    pry (0.11.3)
+    pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (3.0.3)
